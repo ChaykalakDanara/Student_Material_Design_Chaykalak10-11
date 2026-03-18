@@ -1,6 +1,5 @@
-package com.timonin.student_material_design.ui.theme
+package com.timonin.student_material_design_Chaykalak.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

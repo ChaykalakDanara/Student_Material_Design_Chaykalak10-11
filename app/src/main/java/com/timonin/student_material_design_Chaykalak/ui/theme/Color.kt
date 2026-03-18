@@ -1,4 +1,4 @@
-package com.timonin.student_material_design.ui.theme
+package com.timonin.student_material_design_Chaykalak.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

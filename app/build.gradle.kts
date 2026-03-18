@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.timonin.student_material_design"
+    namespace = "com.timonin.student_material_design_Chaykalak"
     compileSdk {
         version = release(36)
     }

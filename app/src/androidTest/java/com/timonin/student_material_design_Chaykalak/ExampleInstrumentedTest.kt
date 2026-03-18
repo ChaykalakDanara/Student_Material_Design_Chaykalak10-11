@@ -1,4 +1,4 @@
-package com.timonin.student_material_design
+package com.timonin.student_material_design_Chaykalak
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
