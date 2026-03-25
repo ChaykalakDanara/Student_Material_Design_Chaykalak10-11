@@ -132,6 +132,7 @@ fun Student_Material_DesignTheme( // ТУТ ВНИМАТЕЛЬНО ДОЛЖНО 
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        shapes = Shapes,
         content = content
     )
 }
