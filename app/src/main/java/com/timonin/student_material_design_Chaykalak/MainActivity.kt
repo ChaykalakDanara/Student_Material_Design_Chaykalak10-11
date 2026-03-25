@@ -15,7 +15,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -97,21 +99,28 @@ fun StringItem(
     student: Student,
     modifier: Modifier = Modifier
 ) {
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(dimensionResource(R.dimen.padding_small))
-    ){
-        StudentIcon(student.imageResourceId)
-        StudentInformation(student.name, student.age)
+    Card(modifier = modifier) {
+        Row(
+            modifier = modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.padding_small))
+        ) {
+            StudentIcon(student.imageResourceId)
+            StudentInformation(student.name, student.age)
+        }
     }
 }
 
 @Composable
 fun StudentApp() {
-    LazyColumn() {
-        items(students){
-            StringItem(it)
+    Scaffold{ it ->
+        LazyColumn(contentPadding = it) {
+            items(students) {
+                StringItem(
+                    student = it,
+                    modifier =  Modifier
+                        .padding(dimensionResource(R.dimen.padding_small)))
+            }
         }
     }
 }
