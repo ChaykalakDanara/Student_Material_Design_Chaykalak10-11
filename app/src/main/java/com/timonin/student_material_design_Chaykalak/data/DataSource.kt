@@ -1,6 +1,7 @@
 package com.timonin.student_material_design_Chaykalak.data
 
-import com.timonin.student_material_design.R
+import com.timonin.student_material_design_Chaykalak.R
+
 
 val students = listOf(
     Student(
